@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        function g() {
+            for (i = 0; i < 10; i++) {
+                f();
+            }
+        }
+
+        function f() {
+            for (i = 0; i < 10; i++) {
+                console.log("XXX");
+            }
+        }
+
+        g();
+    </script>
+</body>
+</html>
