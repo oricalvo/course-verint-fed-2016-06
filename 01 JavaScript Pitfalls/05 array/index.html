@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+
+        function scope() {
+
+            function g() {
+            }
+
+            var g = (function () {
+
+            })().id;
+
+        }
+
+
+        //var arr = [];
+        //console.log(arr.length);
+
+        //arr.push(1);
+        //console.log(arr.length);
+
+        //arr.pop();
+        //console.log(arr.length);
+
+        //arr[1000] = 2;
+        //console.log(arr.length);
+
+        //arr.splice(0, 1000);
+        //console.log(arr.length);
+
+        //var key1 = {};
+        //var key2 = {};
+        //var map = {};
+
+        //map[key1.toString()] = true;
+        //map[key2] = true;
+        //for (var key in map) {
+        //    console.log(key + ": " + map[key]);
+        //}
+
+        //console.log(map[key2]);
+
+        var obj = {};
+        obj.name = "Ori";
+        //obj["name"] = "Ori";
+        //obj["id"] = 123;
+
+        obj["name"] = null;
+        //delete obj["name"];
+
+        if ("name" in obj) {
+            console.log("HAS");
+        }
+
+        if (obj.hasOwnProperty("name")) {
+            console.log("HAS");
+        }
+
+        for (var key in obj) {
+            console.log(key + " = " + obj[key]);
+        }
+    </script>
+</body>
+</html>

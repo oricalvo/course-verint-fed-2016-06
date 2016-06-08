@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        function injectJSONIfRequired() {
+            if (typeof JSON2 == "undefined") {
+                console.log("OLD browser");
+
+                window.JSON2 = {
+                    parse: function () {
+                        return {};
+                    },
+                    stringify: function () {
+                        return "";
+                    }
+                };
+            }
+        }
+
+        injectJSONIfRequired();
+
+        var obj = {
+            id: 1,
+            name: "Ori",
+        };
+
+        var json = JSON2.stringify(obj);
+
+        console.log(json);
+
+        var obj2 = JSON2.parse(json);
+
+        console.log(obj == obj2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        function Counter() {
+            var val = 0;
+
+            function inc() {
+                return ++val;
+            }
+
+            function dec() {
+                --val;
+            }
+
+            function dump() {
+                console.log(val);
+            }
+
+            return {
+                inc: inc,
+                dec: dec,
+                dump: dump,
+                val: val,
+            };
+        }
+
+        var c1 = new Counter();
+        c1.inc();
+        c1.inc();
+        c1.inc();
+        c1.dec();
+        c1.dump();
+
+        //var c2 = Counter();
+        //c2.inc();
+
+        //console.log(c1.inc == c2.inc);
+
+        //var f = g();
+
+        //f();
+
+    </script>
+</body>
+</html>
