@@ -15,3 +15,6 @@ colors
 inspection
 styles/_*
 styles/flag*
+bin
+obj
+packages
