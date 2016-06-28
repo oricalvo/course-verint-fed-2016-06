@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACJ,OAAO,EAAE,YAAY;EACrB,KAAK,EAAE,IAAI;EAEX,cAAO;IACH,KAAK,EAAE,IAAI",
+"sources": ["counterComponent.scss"],
+"names": [],
+"file": "counterComponent.css"
+}

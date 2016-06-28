@@ -1,0 +1,14 @@
+$theme-color: orange;
+
+ul.contacts li.super-contact div.header {
+    background-color: $theme-color;
+}
+
+ul.contacts li.super-contact div.header button{
+
+}
+
+
+button {
+    color: $theme-color;
+}

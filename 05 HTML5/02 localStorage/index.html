@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="buttonSave">Save</button>
+<input type="file" />
+
+<script>
+    document.getElementById("buttonSave").addEventListener("click", function () {
+        var contact = {
+            id: 1,
+            name: "Ori"
+        };
+        localStorage.setItem("myData", JSON.stringify(contact));
+    });
+</script>
+</body>
+</html>

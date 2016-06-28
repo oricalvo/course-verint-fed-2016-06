@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        input {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>Browse</button>
+    <input type="file" />
+    <img />
+
+<script src="jquery.js"></script>
+<script>
+    $("button").click(function(){
+        $("input").trigger("click");
+    });
+
+    $("input").bind("change", function(e){
+       console.log(this.files);
+
+        var reader = new FileReader();
+        //reader.readAsText(this.files[0]);
+        reader.readAsDataURL(this.files[0]);
+
+        reader.addEventListener("load", function(e){
+            var dataUrl = e.target.result;
+
+            $("img").attr("src", dataUrl);
+           //console.log();
+        });
+    });
+</script>
+</body>
+</html>

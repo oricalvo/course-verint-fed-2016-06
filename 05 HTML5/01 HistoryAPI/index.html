@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="button1">View 1</button>
+    <button id="button2">View 2</button>
+
+    <script>
+        document.getElementById("button1").addEventListener("click", function(){
+            window.history.pushState({view: "1"}, null, "view1");
+        });
+
+        document.getElementById("button2").addEventListener("click", function(){
+            window.history.pushState({view: "2"}, null, "view2");
+        });
+
+        window.addEventListener("popstate", function(e){
+           console.log("POPSTATE: ", e)
+        });
+    </script>
+</body>
+</html>
