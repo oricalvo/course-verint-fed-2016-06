@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .btn {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button>Click me</button>
+
+    <div ng-controller="HomeCtrl">
+        <button ng-click="change()">Change</button>
+
+        <repeater model="contacts" model-item="contact">
+            <div>Count {{contact.name}}</div>
+        </repeater>
+    </div>
+
+
+    <script src="jquery.js"></script>
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<ul>
+    <li ng-repeat="c in $ctrl.contacts2 track by $index">
+        <contact contact="c"></contact>
+        <!--<span>Name: {{contact.name}}</span>-->
+        <!--<span>, ScopeId: {{$id}}</span>-->
+        <!--<span>, $$hashKey: {{contact.$$hashKey}}</span>-->
+    </li>
+</ul>
+
+<button ng-click="$ctrl.change()">Change List</button>

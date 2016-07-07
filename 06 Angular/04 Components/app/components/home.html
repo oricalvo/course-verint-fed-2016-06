@@ -1,0 +1,10 @@
+<site-menu></site-menu>
+
+<button ng-click="$ctrl.changeContact()">Change</button>
+<button ng-click="$ctrl.showContacts = !$ctrl.showContacts">Toggle</button>
+<contact-list ng-if="$ctrl.showContacts" contacts="$ctrl.contacts"></contact-list>
+
+<button ng-click="$ctrl.changeClock()">Change</button>
+<clock format="$ctrl.clockFormat"></clock>
+
+<clock></clock>

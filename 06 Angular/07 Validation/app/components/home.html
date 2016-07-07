@@ -1,0 +1,21 @@
+<form name="$ctrl.form" novalidate>
+    <div>User Name:</div>
+    <div>
+        <input ng-model="$ctrl.userName" name="userName" required />
+    </div>
+
+    <div>E-Mail:</div>
+    <div>
+        <input ng-model="$ctrl.email" name="email" />
+    </div>
+
+    <div>Password:</div>
+    <div>
+        <input type="$ctrl.password" ng-model="password" name="password" required />
+    </div>
+
+    <div>
+        <button ng-click="$ctrl.login()">Login</button>
+    </div>
+
+</form>
